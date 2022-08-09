@@ -1,0 +1,38 @@
+@use "getPaths";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+span {color: getPaths.$colorEffect;}
+
+html, body {
+    color: getPaths.$colorText;
+    font-size: 62.5%;
+    background-color: getPaths.$colorBackground;
+    background-image: url(../image/weighing-scale-gf8be5dc3b_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.information {
+    padding: 10px;
+    margin: 15px auto;
+    background: getPaths.$backgroundInformation;
+    width: 80%;
+    border-radius: getPaths.$round_text;
+    h1 {
+        padding: 5px;
+        color: getPaths.$colorH1;
+        font-size: 2.1rem;
+    }
+    p {
+        text-align: justify;
+        padding: 6px;
+        width: 100%;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+    .question {
+        color: getPaths.$colorEffect;
+        font-size: 2rem;
+    }
+}
