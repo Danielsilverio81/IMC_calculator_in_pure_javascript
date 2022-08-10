@@ -9,6 +9,8 @@ span {
 }
 
 html, body {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
   color: #363636;
   font-size: 62.5%;
   background-color: aqua;
@@ -18,25 +20,151 @@ html, body {
 }
 
 .information {
-  padding: 10px;
+  padding: 8px;
   margin: 15px auto;
   background: #F8F8FF;
-  width: 80%;
+  width: 95%;
   border-radius: 10px;
 }
 .information h1 {
-  padding: 5px;
+  padding: 3px 6px;
   color: #6b6a6a;
+  font-style: italic;
   font-size: 2.1rem;
 }
 .information p {
   text-align: justify;
   padding: 6px;
   width: 100%;
-  font-size: 1.7rem;
-  line-height: 2.2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.7px;
+  line-height: 2.1rem;
 }
 .information .question {
   color: #00B2EE;
   font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.container form {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 2px 3px aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: 32px;
+  padding: 10px;
+  width: 25%;
+  background: #054257;
+}
+.container form h2 {
+  color: #F8F8FF;
+  margin: 0 8px;
+  font-size: 2.5rem;
+}
+.container form input {
+  margin: 2px auto;
+  width: 95%;
+  padding: 10px;
+}
+.container form label {
+  margin: 0 8px;
+  padding: 5px 0;
+  font-size: 2.5rem;
+  color: #F8F8FF;
+}
+.container form button {
+  border: none;
+  color: #a81c1c;
+  margin: 9px;
+  border-radius: 10px;
+  padding: 6px;
+}
+.container form button:hover {
+  background: #00B2EE;
+}
+.container .list {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 2px 3px aqua;
+  margin-right: 32px;
+  padding: 10px;
+  color: #F8F8FF;
+  font-size: 1.5rem;
+  width: 25%;
+  background: #054257;
+}
+.container ul li {
+  margin-left: 25px;
+  width: 90%;
+}
+.container h2 {
+  margin: 0 7px;
+}
+
+@media (max-width: 840px) {
+  html, body {
+    font-size: 47%;
+  }
+
+  .container form h2 {
+    font-size: 1.8rem;
+  }
+
+  .container .list h2 {
+    font-size: 1.8rem;
+    margin: 5px;
+  }
+
+  .list ul li {
+    margin-left: 14px;
+  }
+}
+@media (min-width: 532px) and (max-width: 600px) {
+  body {
+    background-image: url();
+  }
+
+  .container {
+    justify-content: space-around;
+  }
+
+  form, .list {
+    margin-bottom: 25px;
+  }
+  form h2, .list h2 {
+    font-size: 1.7rem;
+  }
+
+  form label, input {
+    font-size: 1.3rem;
+  }
+
+  .list ul li {
+    margin-left: 12px;
+  }
+}
+@media (max-width: 532px) {
+  .container {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .container form, .list {
+    margin: 10px 10px;
+  }
+
+  .container form {
+    width: 80%;
+  }
+
+  .container .list {
+    width: 90%;
+  }
 }

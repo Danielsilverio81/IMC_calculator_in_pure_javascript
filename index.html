@@ -4,37 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Calculadora de IMC</title>
 </head>
 <body>
-    <section>
-        <div class="information">
-            <h1>O que é <span>IMC</span>?</h1>
-            <p style="text-indent: 8px;">Índice de Massa Corporal. Você já deve ter ouvido falar nisso. Talvez apenas a sigla IMC.
-                Mas você sabe que índice é este e o que ele pode dizer sobre a sua saúde?
-                Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa Corporal,
-                conhecido pela sigla IMC, é um cálculo simples que permite medir se alguém está ou não com o peso ideal.
-                Ele aponta se o peso está adequado ou se está abaixo ou acima do peso.
-                 Quando o índice de massa corporal recomendado está excedido, é porque a pessoa pode estar numa situação de sobrepeso
-                 com tendência à obesidade ou já ter a obesidade. Portanto, o calculo pode ser feito em casa, mas, dependendo do resultado,
-                 é importante procurar um médico para avaliar o grau de sobrepeso ou obesidade. Ou o extremo oposto disso. Se o índice estiver
-                 muito abaixo da normalidade para o homem e para a mulher indica que a pessoa pode estar no estado de desnutrição, de perda expressiva de massa.
-                 E assim como a obesidade, também existem graus de magreza.
-            </p>
-             <h2 class="question">Vamos avaliar seu IMC?</h2>
-        </div>
-    </section>
-    <section class="container">
-        <h2>Calculadora de IMC</h2>
-        <form id="form" action="" method="get">
-            <label for="peso">Peso:</label>
-            <input type="text" id="peso" name="peso" placeholder="Digite seu peso!" required>
-            <label for="altura">Altura</label>
-            <input type="text" id="altura" name="altura" placeholder="Digite sua altura!" required>
-            <button type="submit">Ver resultado</button>
-        </form>
-    </section>
+    <main>
+        <section>
+            <div class="information">
+                <h1>O que é <span>IMC</span>?</h1>
+                <p style="text-indent: 8px;">Índice de Massa Corporal. Você já deve ter ouvido falar nisso. Talvez apenas a sigla IMC.
+                    Mas você sabe que índice é este e o que ele pode dizer sobre a sua saúde?
+                    Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa Corporal,
+                    conhecido pela sigla IMC, é um cálculo simples que permite medir se alguém está ou não com o peso ideal.
+                    Ele aponta se o peso está adequado ou se está abaixo ou acima do peso.
+                     Quando o índice de massa corporal recomendado está excedido, é porque a pessoa pode estar numa situação de sobrepeso
+                     com tendência à obesidade ou já ter a obesidade. Portanto, o calculo pode ser feito em casa, mas, dependendo do resultado,
+                     é importante procurar um médico para avaliar o grau de sobrepeso ou obesidade. Ou o extremo oposto disso. Se o índice estiver
+                     muito abaixo da normalidade para o homem e para a mulher indica que a pessoa pode estar no estado de desnutrição, de perda expressiva de massa.
+                     E assim como a obesidade, também existem graus de magreza.
+                </p>
+                 <h2 class="question">Vamos avaliar seu IMC?</h2>
+            </div>
+        </section>
+        <section class="container">
+            <form id="form" action="" method="get">
+                <h2>Calculadora de IMC</h2>
+                <label for="peso">Peso:</label>
+                <input type="text" id="peso" name="peso" placeholder="Digite seu peso!" required>
+                <label for="altura">Altura:</label>
+                <input type="text" id="altura" name="altura" placeholder="Digite sua altura!" required>
+                <button type="submit">Ver resultado</button>
+                <div class="resultado"></div>
+            </form>
+            <div class="list">
+                <h2>IMC - Classificação</h2>
+                <ul>
+                    <li>Menor que 16 - Magreza grave</li>
+                    <li>17 a menor que 18,5 - Magreza leve</li>
+                    <li>18,5 a menor que 25 - Saudável</li>
+                    <li>25 a menor que 30 - Sobrepeso</li>
+                    <li>30 a menor que 35 - Obesidade Grau I</li>
+                    <li>35 a menor que 40 - Obesidade Grau II (considerada severa)</li>
+                    <li>Maior que 40 - Obesidade Grau III (considerada mórbida)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
