@@ -103,13 +103,16 @@ html, body {
     .list ul li {margin-left: 14px;}
 }
 @media (min-width:532px) and (max-width:600px) {
-    body {background-image: url();}
+    body {background-image: url(../image/weighing-scale-gacb689904_640.jpg); 
+        background-repeat: no-repeat; background-size: cover;}
     .container {justify-content: space-around;}
     form, .list {margin-bottom: 25px; h2 {font-size: 1.7rem;}}
     form label, input {font-size: 1.3rem;}
     .list ul li {margin-left: 12px;}
 }
 @media (max-width:532px) {
+    body {background-image: url(../image/weighing-scale-gacb689904_640.jpg); 
+        background-repeat: no-repeat; background-size: cover;}
     .container {flex-direction: column; margin: 10px;}
     .container form, .list {margin:10px 10px;}
     .container form {width: 80%;}

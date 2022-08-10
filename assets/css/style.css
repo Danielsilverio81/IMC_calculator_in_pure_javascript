@@ -128,7 +128,9 @@ html, body {
 }
 @media (min-width: 532px) and (max-width: 600px) {
   body {
-    background-image: url();
+    background-image: url(../image/weighing-scale-gacb689904_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .container {
@@ -151,6 +153,12 @@ html, body {
   }
 }
 @media (max-width: 532px) {
+  body {
+    background-image: url(../image/weighing-scale-gacb689904_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .container {
     flex-direction: column;
     margin: 10px;
