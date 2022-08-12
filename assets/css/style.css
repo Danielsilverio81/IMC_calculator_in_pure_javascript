@@ -58,7 +58,7 @@ body {
 .container form {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 2px 2px 3px aqua;
+  box-shadow: 2px 2px 3px #077a7a;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -98,12 +98,12 @@ body {
 }
 .container form .paragraphResult, .container form .bad {
   border-radius: 10px;
-  margin: 2px auto;
-  font-size: 2.2rem;
+  margin: auto;
+  font-size: 1.6rem;
   color: #F8F8FF;
   width: 95%;
   background: #00B2EE;
-  padding: 10px;
+  padding: 4px;
 }
 .container form .bad {
   background: #be2e2e;
@@ -111,7 +111,7 @@ body {
 .container .list {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 2px 2px 3px aqua;
+  box-shadow: 2px 2px 3px #077a7a;
   margin-right: 32px;
   padding: 10px;
   color: #F8F8FF;
@@ -129,6 +129,22 @@ body {
   margin: 0 7px;
 }
 
+footer {
+  margin: 5px;
+  font-size: 1rem;
+}
+
+.end-page a {
+  color: #077a7a;
+  text-decoration: none;
+}
+
+@media (min-width: 1116px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
 @media (max-width: 840px) {
   html {
     font-size: 48%;
@@ -185,12 +201,12 @@ body {
     width: 90%;
   }
 }
-@media (min-width: 605px) and (max-width: 840px) {
+@media (min-width: 684px) and (max-width: 840px) {
   body {
     height: 100vh;
   }
 }
-@media (max-width: 644px) {
+@media (max-width: 684px) {
   body {
     height: 100%;
     background-image: url(../image/weighing-scale-gacb689904_640.jpg);
@@ -205,5 +221,10 @@ body {
 
   .information {
     display: none;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
   }
 }
