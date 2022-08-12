@@ -148,5 +148,5 @@ body {
     background-image: url(../image/weighing-scale-gacb689904_640.jpg); 
     background-repeat: no-repeat; background-size: cover;}
 }
-@media (min-width:319px) and (max-width:450px) {main {height: 600px;} .information {display: none;} 
+@media (min-width:319px) and (max-width:450px) {main {height: 100vh;} .information {display: none;} 
 .container {margin-top: 40px;} footer {position: absolute; bottom: 0;}}
