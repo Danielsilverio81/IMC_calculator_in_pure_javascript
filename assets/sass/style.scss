@@ -21,6 +21,7 @@ body {
 .information {
     padding: 8px;
     margin: 15px auto;
+    margin-bottom: 20px;
     background: getPaths.$backgroundInformation;
     width: 95%;
     border-radius: getPaths.$round_text;
@@ -127,14 +128,15 @@ body {
 }
 @media (max-width:634px) {
     .container {flex-direction: column; margin: 10px;}
-    .container form, .list {margin:10px 10px;}
+    .container form, .list {margin:10px;}
     .container form {width: 80%;}
     .container .list {width: 90%;}
 }
-@media (min-width:605px) and (max-width:840px) {body {height: 100vh;}} //Para manter a imagem de fundo em toda a tela
-@media (max-width:605px) {
+@media (min-width:605px) and (max-width:840px) {body {height: 100vh;}} //Para manter a imagem de fundo em toda a tela.
+@media (max-width:644px) {
 body {
     height: 100%;
     background-image: url(../image/weighing-scale-gacb689904_640.jpg); 
-     background-repeat: no-repeat; background-size: cover;}
+    background-repeat: no-repeat; background-size: cover;}
 }
+@media (min-width:319px) and (max-width:450px) {body {height: 100vh;} .information {display: none;}}

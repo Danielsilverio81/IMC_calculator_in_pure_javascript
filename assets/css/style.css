@@ -27,6 +27,7 @@ body {
 .information {
   padding: 8px;
   margin: 15px auto;
+  margin-bottom: 20px;
   background: #F8F8FF;
   width: 95%;
   border-radius: 10px;
@@ -173,7 +174,7 @@ body {
   }
 
   .container form, .list {
-    margin: 10px 10px;
+    margin: 10px;
   }
 
   .container form {
@@ -189,11 +190,20 @@ body {
     height: 100vh;
   }
 }
-@media (max-width: 605px) {
+@media (max-width: 644px) {
   body {
     height: 100%;
     background-image: url(../image/weighing-scale-gacb689904_640.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+@media (min-width: 319px) and (max-width: 450px) {
+  body {
+    height: 100vh;
+  }
+
+  .information {
+    display: none;
   }
 }
