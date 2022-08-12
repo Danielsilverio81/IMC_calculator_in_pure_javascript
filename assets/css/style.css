@@ -120,6 +120,7 @@ body {
   margin-bottom: 20px;
 }
 .container ul li {
+  margin-top: 3px;
   margin-left: 25px;
   width: 90%;
 }
@@ -129,7 +130,7 @@ body {
 
 @media (max-width: 840px) {
   html {
-    font-size: 47%;
+    font-size: 48%;
   }
 
   .container form h2 {

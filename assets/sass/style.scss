@@ -105,6 +105,7 @@ body {
     background: getPaths.$colorBackForm;
     margin-bottom: 20px;
   } ul li {
+    margin-top:3px;
     margin-left: 25px;
     width: 90%;
   } h2 {
@@ -113,7 +114,7 @@ body {
 }
 //Responsiveness.
 @media (max-width:840px) {
-    html {font-size: 47%;}
+    html {font-size: 48%;}
     .container form h2 {font-size: 1.8rem;}
     .container .list h2 {font-size: 1.8rem; margin: 5px;}
     .list ul li {margin-left: 14px;}
