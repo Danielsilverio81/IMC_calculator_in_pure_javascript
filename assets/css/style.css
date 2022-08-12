@@ -64,7 +64,7 @@ body {
   align-items: flex-start;
   justify-content: space-evenly;
   margin-left: 32px;
-  padding: 10px;
+  padding: 7px;
   width: 25%;
   margin-bottom: 20px;
   background: #054257;
@@ -101,7 +101,7 @@ body {
   margin: auto;
   font-size: 1.6rem;
   color: #F8F8FF;
-  width: 95%;
+  width: 100%;
   background: #00B2EE;
   padding: 4px;
 }
@@ -201,7 +201,7 @@ footer {
     width: 90%;
   }
 }
-@media (min-width: 684px) and (max-width: 840px) {
+@media (min-width: 705px) and (max-width: 840px) {
   body {
     height: 100vh;
   }
@@ -215,12 +215,16 @@ footer {
   }
 }
 @media (min-width: 319px) and (max-width: 450px) {
-  body {
-    height: 100vh;
+  main {
+    height: 600px;
   }
 
   .information {
     display: none;
+  }
+
+  .container {
+    margin-top: 40px;
   }
 
   footer {

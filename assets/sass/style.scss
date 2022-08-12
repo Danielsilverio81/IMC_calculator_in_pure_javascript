@@ -55,7 +55,7 @@ body {
         align-items: flex-start;
         justify-content: space-evenly;
         margin-left: 32px;
-        padding: 10px;
+        padding: 7px;
         width: 25%;
         margin-bottom: 20px;
         background: getPaths.$colorBackForm;
@@ -83,12 +83,12 @@ body {
             background: getPaths.$colorEffect;
         }
     }
-    .paragraphResult, .bad {
+    .paragraphResult,.bad {
         border-radius:getPaths.$round_text ;
         margin: auto;
         font-size: 1.6rem;
         color: getPaths.$backgroundInformation;
-        width: 95%;
+        width: 100%;
         background: getPaths.$colorEffect;
         padding: 4px;
     } .bad {
@@ -141,11 +141,12 @@ footer {
     .container form {width: 80%;}
     .container .list {width: 90%;}
 }
-@media (min-width:684px) and (max-width:840px) {body {height: 100vh;}} //Para manter a imagem de fundo em toda a tela.
+@media (min-width:705px) and (max-width:840px) {body {height: 100vh;}} //Para manter a imagem de fundo em toda a tela.
 @media (max-width:684px) {
 body {
     height: 100%;
     background-image: url(../image/weighing-scale-gacb689904_640.jpg); 
     background-repeat: no-repeat; background-size: cover;}
 }
-@media (min-width:319px) and (max-width:450px) {body {height: 100vh;} .information {display: none;} footer {position: absolute; bottom: 0;}}
+@media (min-width:319px) and (max-width:450px) {main {height: 600px;} .information {display: none;} 
+.container {margin-top: 40px;} footer {position: absolute; bottom: 0;}}
