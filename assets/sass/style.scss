@@ -4,12 +4,15 @@
 
 span {color: getPaths.$colorEffect;}
 
-html, body {
+html { font-size: 62.5%;}
+
+body {
+    height: 100%;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     color: getPaths.$colorText;
     font-size: 62.5%;
-    background-color: getPaths.$colorBackground;
+    background-color: getPaths.$colorBackForm;
     background-image: url(../image/weighing-scale-gf8be5dc3b_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +45,6 @@ html, body {
 .container {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15px;
     form {
         border-bottom-left-radius: getPaths.$round_text;
         border-bottom-right-radius: getPaths.$round_text;
@@ -54,6 +56,7 @@ html, body {
         margin-left: 32px;
         padding: 10px;
         width: 25%;
+        margin-bottom: 20px;
         background: getPaths.$colorBackForm;
     h2 {
         color: getPaths.$colorText2;
@@ -69,14 +72,26 @@ html, body {
         font-size: 2.5rem;
         color: getPaths.$colorText2;
     } button {
+        font-weight: bold;
         border: none;
-        color: rgb(168, 28, 28);
+        color: rgb(116, 20, 20);
         margin: 9px;
         border-radius: getPaths.$round_text;
         padding: 6px;
         &:hover {
             background: getPaths.$colorEffect;
         }
+    }
+    .paragraphResult, .bad {
+        border-radius:getPaths.$round_text ;
+        margin: 2px auto;
+        font-size: 2.2rem;
+        color: getPaths.$backgroundInformation;
+        width: 95%;
+        background: getPaths.$colorEffect;
+        padding: 10px;
+    } .bad {
+        background: rgb(190, 46, 46);
     }
   }  .list {
     border-bottom-left-radius: getPaths.$round_text;
@@ -88,6 +103,7 @@ html, body {
     font-size: 1.5rem;
     width: 25%;
     background: getPaths.$colorBackForm;
+    margin-bottom: 20px;
   } ul li {
     margin-left: 25px;
     width: 90%;
@@ -97,24 +113,27 @@ html, body {
 }
 //Responsiveness.
 @media (max-width:840px) {
-    html, body {font-size: 47%;}
+    html {font-size: 47%;}
     .container form h2 {font-size: 1.8rem;}
     .container .list h2 {font-size: 1.8rem; margin: 5px;}
     .list ul li {margin-left: 14px;}
 }
-@media (min-width:532px) and (max-width:600px) {
-    body {background-image: url(../image/weighing-scale-gacb689904_640.jpg); 
-        background-repeat: no-repeat; background-size: cover;}
+@media (min-width:635px) and (max-width:750px) {
     .container {justify-content: space-around;}
     form, .list {margin-bottom: 25px; h2 {font-size: 1.7rem;}}
     form label, input {font-size: 1.3rem;}
     .list ul li {margin-left: 12px;}
 }
-@media (max-width:532px) {
-    body {background-image: url(../image/weighing-scale-gacb689904_640.jpg); 
-        background-repeat: no-repeat; background-size: cover;}
+@media (max-width:634px) {
     .container {flex-direction: column; margin: 10px;}
     .container form, .list {margin:10px 10px;}
     .container form {width: 80%;}
     .container .list {width: 90%;}
+}
+@media (min-width:605px) and (max-width:840px) {body {height: 100vh;}} //Para manter a imagem de fundo em toda a tela
+@media (max-width:605px) {
+body {
+    height: 100%;
+    background-image: url(../image/weighing-scale-gacb689904_640.jpg); 
+     background-repeat: no-repeat; background-size: cover;}
 }
